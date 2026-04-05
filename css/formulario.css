@@ -1,0 +1,13 @@
+.text-center {
+    text-align: left !important;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+
+    text-shadow: 2px 2px 5px black;
+
+    font-size: 70px;
+    font-family: "Bungee", sans-serif;
+}

@@ -6,159 +6,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetLife - Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>PetLife Amigos dos Pets</h1>
+    <header class="header">
+        <div class="logo-container">
+            <img class="logo" src="../img/logo sem fundo.png" alt="Logo do PetLife">
+        </div>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>PetLife</h1>
+            <p class="subtitle">Amigos dos Pets </p>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <hr>
-
     <main>
-        <h2>Produtos</h2>
-
-        <h3>Cachorros</h3>
-        <ul>
-            <li><a href="#racoes-dogs">Rações e Petiscos</a></li>
-            <li><a href="#brinquedos-dogs">Brinquedos e Acessórios</a></li>
-            <li><a href="#shampoo-dogs">Shampoo e Condicionador</a></li>
-        </ul>
-
-        <h3>Gatos</h3>
-        <ul>
-            <li><a href="#racoes-cats">Rações e Petiscos</a></li>
-            <li><a href="#brinquedos-cats">Brinquedos e Acessórios</a></li>
-            <li><a href="#shampoo-cats">Shampoo e Condicionador</a></li>
-        </ul>
-
-        <hr>
-
-        <section>
-            <h2>Cachorros</h2>
-            <section id="racoes-dogs">
-                <h3>Rações e Petiscos</h3>
-                <article class="produto">
-                    <h4>Ração Golden para Cachorros Adultos Sabor Frango 15kg</h4>
+        <h2 class="title">Produtos</h2>
+        <div class="list-produtos">
+            <ul>
+                <li><a class="link" href="#racoes">Rações e Petiscos</a></li>
+                <li><a class="link" href="#brinquedos">Brinquedos e Acessórios</a></li>
+                <li><a class="link" href="#shampoo">Shampoo e Condicionador</a></li>
+            </ul>
+        </div>
+        <section id="racoes">
+            <h3 class="title-content">Rações e Petiscos</h3>
+            <div class="container">
+                <article class="caixa-produto">
                     <figure>
-                        <img src="../img/GranPlusChoiceAdulto.jpg"
+                        <img class="img-produto" src="../img/GranPlusChoiceAdulto.jpg"
                             alt="Pacote de ração para cachorros adultos sabor frango e carne 15kg" width="200">
                     </figure>
-                    <p><strong>Preço:</strong> R$ 149,90</p>
-                    <p><strong>Descrição:</strong>
+                    <h4 class="title-produto">Ração Golden para Cachorros Adultos Sabor Frango 15kg</h4>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 149,90</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
                         Ração desenvolvida para cães adultos.
                         Possui proteínas de alta qualidade e nutrientes essenciais para
                         manter a saúde e o peso ideal do seu pet.
                     </p>
                 </article>
-            </section>
-
-            <section id="brinquedos-dogs">
-                <h3>Brinquedos e Acessórios</h3>
-                <article class="produto">
-                    <h4>Brinquedo Chalesco Bola De Tennis Com 2 Unidades (G)</h4>
+                <article class="caixa-produto">
                     <figure>
-                        <img src="../img/20659370864ec7fc3b7.webp" alt="Brinquedo - Bola De Tennis Com 2 Unidades (G)"
-                            width="200">
-                    </figure>
-                    <p><strong>Preço:</strong> R$ 50,00</p>
-                    <p><strong>Descrição:</strong>
-                        Brinquedo Chalesco Bola De Tennis Com 2 Unidades (G).
-                        Ideal para jogar com seu cão e mantê-lo ativo.
-                    </p>
-                </article>
-            </section>
-
-            <section id="shampoo-dogs">
-                <h3>Shampoo e Condicionador</h3>
-                <article class="produto">
-                    <h4>Shampoo e Condicionador para Cachorros 400ml</h4>
-                    <figure>
-                        <img src="../img/shampoo_sanol_neutro_para_cachorro_e_gato_condicionador_sanol_289_1_20191009200925.webp"
-                            alt="Shampoo e condicionador para cachorros 400ml" width="200">
-                    </figure>
-                    <p><strong>Preço:</strong> R$ 89,90</p>
-                    <p><strong>Descrição:</strong>
-                        Shampoo e condicionador desenvolvidos para cuidar da pele e do pelo dos cães.
-                        Possui fórmula suave e eficaz para manter a saúde e o brilho do seu pet.
-                    </p>
-                </article>
-            </section>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>Gatos</h2>
-            <section id="racoes-cats">
-                <h3>Rações e Petiscos</h3>
-                <article class="produto">
-                    <h4>Ração Golden para Gatos Adultos Castrados Sabor Frango 1kg</h4>
-                    <figure>
-                        <img src="../img/Ração_Golden_Gatos_Adultos_Castrados_Frango_31017079_1kg_lateral.jpg"
+                        <img class="img-produto"
+                            src="../img/Ração_Golden_Gatos_Adultos_Castrados_Frango_31017079_1kg_lateral.jpg"
                             alt="Ração para gatos adultos castrados sabor frango 1kg" width="200">
                     </figure>
-                    <p><strong>Preço:</strong> R$ 49,90</p>
-                    <p><strong>Descrição:</strong>
+                    <h4 class="title-produto">Ração Golden para Gatos Adultos Castrados Sabor Frango 1kg</h4>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 49,90</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
                         Ração premium desenvolvida especialmente para gatos adultos castrados.
                         Possui proteínas de alta qualidade e nutrientes essenciais para
                         manter a saúde e o peso ideal do seu pet.
                     </p>
                 </article>
-            </section>
-
-            <section id="brinquedos-cats">
-                <h3>Brinquedos e Acessórios</h3>
-                <article class="produto">
-                    <h4>Arranhador para gatos </h4>
+                <article class="caixa-produto">
                     <figure>
-                        <img src="../img/61qjfKHWYtL.jpg" alt="Arranhador para gatos" width="200">
+                        <img class="img-produto"
+                            src="../img/Ração_Golden_Gatos_Adultos_Castrados_Frango_31017079_1kg_lateral.jpg"
+                            alt="Ração para gatos adultos castrados sabor frango 1kg" width="200">
                     </figure>
-                    <p><strong>Preço:</strong> R$ 79,90</p>
-                    <p><strong>Descrição:</strong>
+                    <h4 class="title-produto">Ração Golden para Gatos Adultos Castrados Sabor Frango 1kg</h4>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 49,90</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
+                        Ração premium desenvolvida especialmente para gatos adultos castrados.
+                        Possui proteínas de alta qualidade e nutrientes essenciais para
+                        manter a saúde e o peso ideal do seu pet.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="brinquedos">
+            <h3>Brinquedos e Acessórios</h3>
+            <div class="container">
+                <article class="caixa-produto">
+                    <figure>
+                        <img class="img-produto" src="../img/20659370864ec7fc3b7.webp"
+                            alt="Brinquedo - Bola De Tennis Com 2 Unidades (G)" width="200">
+                    </figure>
+                    <h4 class="title-produto">Brinquedo Chalesco Bola De Tennis Com 2 Unidades (G)</h4>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 50,00</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
+                        Brinquedo Chalesco Bola De Tennis Com 2 Unidades (G).
+                        Ideal para jogar com seu cão e mantê-lo ativo.
+                    </p>
+                </article>
+                <article class="caixa-produto">
+                    <h4 class="title-produto">Arranhador para gatos </h4>
+                    <figure>
+                        <img class="img-produto" src="../img/61qjfKHWYtL.jpg" alt="Arranhador para gatos" width="200">
+                    </figure>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 79,90</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
                         Arranhador para gatos.
                         Ideal para satisfazer o instinto de arranhar do seu gato e manter suas unhas saudáveis.
                     </p>
                 </article>
-            </section>
-
-            <section id="shampoo-cats">
-                <h3>Shampoo e Condicionador</h3>
-                <article class="produto">
-                    <h4>Shampoo e Condicionador para Gatos 750ml</h4>
+                <article class="caixa-produto">
+                    <h4 class="title-produto">Arranhador para gatos </h4>
                     <figure>
-                        <img src="../img/61XxljTEGOL._AC_UF1000,1000_QL80_.jpg"
+                        <img class="img-produto" src="../img/61qjfKHWYtL.jpg" alt="Arranhador para gatos" width="200">
+                    </figure>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 79,90</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
+                        Arranhador para gatos.
+                        Ideal para satisfazer o instinto de arranhar do seu gato e manter suas unhas saudáveis.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="shampoo">
+            <h3>Shampoo e Condicionador</h3>
+            <div class="container">
+                <article class="caixa-produto">
+                    <figure>
+                        <img class="img-produto"
+                            src="../img/shampoo_sanol_neutro_para_cachorro_e_gato_condicionador_sanol_289_1_20191009200925.webp"
+                            alt="Shampoo e condicionador para cachorros 400ml" width="200">
+                    </figure>
+                    <h4 class="title-produto">Shampoo e Condicionador para Cachorros 400ml</h4>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 89,90</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
+                        Shampoo e condicionador desenvolvidos para cuidar da pele e do pelo dos cães.
+                        Possui fórmula suave e eficaz para manter a saúde e o brilho do seu pet.
+                    </p>
+                </article>
+
+                <article class="caixa-produto">
+                    <figure>
+                        <img class="img-produto" src="../img/61XxljTEGOL._AC_UF1000,1000_QL80_.jpg"
                             alt="Shampoo e condicionador para gatos 750ml" width="200">
                     </figure>
-                    <p><strong>Preço:</strong> R$ 89,90</p>
-                    <p><strong>Descrição:</strong>
+                    <h4 class="title-produto">Shampoo e Condicionador para Gatos 750ml</h4>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 89,90</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
                         Shampoo e condicionador desenvolvidos para cuidar da pele e do pelo dos gatos.
                         Possui fórmula suave e eficaz para manter a saúde e o brilho do seu pet.
                     </p>
                 </article>
-            </section>
+                <article class="caixa-produto">
+                    <figure>
+                        <img class="img-produto" src="../img/61XxljTEGOL._AC_UF1000,1000_QL80_.jpg"
+                            alt="Shampoo e condicionador para gatos 750ml" width="200">
+                    </figure>
+                    <h4 class="title-produto">Shampoo e Condicionador para Gatos 750ml</h4>
+                    <p class="price-produto"><strong>Preço:</strong> R$ 89,90</p>
+                    <p class="description-produto"><strong>Descrição:</strong>
+                        Shampoo e condicionador desenvolvidos para cuidar da pele e do pelo dos gatos.
+                        Possui fórmula suave e eficaz para manter a saúde e o brilho do seu pet.
+                    </p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <hr>
-
-    <footer>
+    <footer class="footer">
         <section id="contatos">
-            <h2>Contatos</h2>
-            <p>Loja: PetLife</p>
-            <p>Localização: Rua Baltazar, 123 - Porto Alegre/RS</p>
-            <p>Telefone: (11) 1234-6789</p>
-            <p>WhatsApp: (11) 98765-4321</p>
-            <p>Contato: petshoplife@gmail.com</p>
+            <h2 class="footer-title">Contatos</h2>
+            <div class="footer-container">
+                <div class="footer-location">
+                    <p class="footer-content">Loja: <span> PetLife</span></p>
+                    <p class="footer-content">Localização: <span>Rua Baltazar, 123 - Porto Alegre/RS</span></p>
+                </div>
+                <div class="footer-contact">
+                    <p class="footer-content">Telefone: <span>(11) 1234-6789</span></p>
+                    <p class="footer-content">WhatsApp: <span>(11) 98765-4321</span></p>
+                    <p class="footer-content">Email: <span>petshoplife@gmail.com</span></p>
+                </div>
+            </div>
         </section>
     </footer>
 
